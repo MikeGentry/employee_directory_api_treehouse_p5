@@ -2,6 +2,36 @@
     box-sizing: border-box;
 }
 
+table {
+    margin-top: 20px;
+}
+
+td {
+    padding: 10px;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    background: linear-gradient(45deg, lightskyblue, white);
+}
+
+ul {
+    font-family: 'Rubik', sans-serif;
+    padding-top: 20px;
+    float: right;
+    list-style-type: none;
+}
+
+li:first-child {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+li:first-child,
+li:last-child {
+    text-transform: capitalize;
+}
+
+
+
 .header {
     border-style: solid;
     border-radius: 10px;
@@ -17,6 +47,12 @@
 .header h2 {
     font-family: 'Rubik', sans-serif;
     margin: 0;
+}
+
+.photo {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
 }
 
 
