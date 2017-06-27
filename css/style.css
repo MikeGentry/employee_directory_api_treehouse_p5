@@ -59,6 +59,17 @@ li:last-child {
     background: linear-gradient(45deg, #87cefa, #ffffff);
 }
 
+.employee:hover {
+    background: linear-gradient(45deg, #ff0c02, #ffffff);
+    cursor: pointer;
+}
+
+.modal {
+    border-style: solid;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #87cefa, #ffffff);
+}
+
 @media (max-width: 960px) {
     .container {
         grid-template-columns: 460px 460px;
