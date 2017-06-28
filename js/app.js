@@ -1,5 +1,5 @@
 $.ajax({
-    url: 'https://randomuser.me/api/?results=12',
+    url: 'https://randomuser.me/api/?results=12&nat=us',
     dataType: 'json',
     success: function(data) {
         let modalHTML = '';
@@ -16,7 +16,7 @@ $.ajax({
             modalHTML += '<div id=' + j + '>';
             modalHTML += '<img class=photo src=' + emp.picture.large + '>';
             modalHTML += '<p>' + emp.name.first + ' ' + emp.name.last + '</p>';
-            modalHTML += '<p>' + emp.login.username + '</p>';
+            modalHTML += '<span>username: ' + emp.login.username + '</span>';
             modalHTML += '<p>' + emp.email + '</p>';
             modalHTML += '<p>' + emp.cell + '</p>';
             modalHTML += '<p>' + emp.location.street + '</p>';
@@ -39,11 +39,6 @@ $.ajax({
                     $(function () {
                         $('.modal').html(modalDiv[i]).dialog({
                             modal: true,
-                            buttons: {
-                                Ok: function () {
-                                    $(this).dialog('close');
-                                }
-                            }
                         })
                     });
                 }

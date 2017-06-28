@@ -57,6 +57,7 @@ li:last-child {
     border: 2px solid lightgray;
     border-radius: 10px;
     background: linear-gradient(45deg, #87cefa, #ffffff);
+    clear: both;
 }
 
 .employee:hover {
@@ -64,10 +65,16 @@ li:last-child {
     cursor: pointer;
 }
 
-.modal {
+.ui-dialog {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
     border-style: solid;
     border-radius: 10px;
     background: linear-gradient(45deg, #87cefa, #ffffff);
+}
+
+.ui-dialog p:nth-child(n+2) {
+    text-transform: capitalize;
 }
 
 @media (max-width: 960px) {
