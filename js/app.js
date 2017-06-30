@@ -18,7 +18,7 @@ $.ajax({
             modalHTML += '<p>' + emp.name.first + ' ' + emp.name.last + '</p>';
             modalHTML += '<span>username: ' + emp.login.username + '</span>';
             modalHTML += '<p>' + emp.email + '</p>';
-            modalHTML += '<p>' + emp.cell + '</p>';
+            modalHTML += '<p>tel: ' + emp.cell + '</p>';
             modalHTML += '<p>' + emp.location.street + '</p>';
             modalHTML += '<p>' + emp.location.city + ', ' + emp.location.state + ' ' + emp.location.postcode + '</p>';
             modalHTML += '<p>DOB: ' + emp.dob + '</p>';
