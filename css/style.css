@@ -65,6 +65,8 @@ li:last-child {
     cursor: pointer;
 }
 
+/* modal window styling */
+
 .ui-dialog {
     text-align: center;
     font-family: 'Rubik', sans-serif;
@@ -73,13 +75,29 @@ li:last-child {
     background: linear-gradient(45deg, #87cefa, #ffffff);
 }
 
-.ui-dialog p:nth-child(n+2) {
+.ui-dialog p:first-of-type {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.ui-dialog p:nth-of-type(n+2) {
+    text-transform: lowercase;
+}
+
+.ui-dialog p:nth-of-type(n+4) {
     text-transform: capitalize;
 }
 
-.ui-dialog p:first-of-type {
-    font-weight: bold;
+
+.no-close .ui-dialog-titlebar-close {
+    display: none;
 }
+
+.ui-dialog-buttonset {
+    padding-bottom: 5px;
+}
+
+/* media queries*/
 
 @media (max-width: 960px) {
     .container {
