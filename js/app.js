@@ -1,5 +1,5 @@
 $.ajax({
-    url: 'https://randomuser.me/api/?results=12&nat=us',
+    url: 'https://randomuser.me/api/?results=12',
     dataType: 'json',
     success: function(data) {
         let modalHTML = '';
@@ -8,10 +8,10 @@ $.ajax({
         $.each(data.results, function (i, emp) {
             profileHTML += '<div class=employee id=' + j + '>';
             profileHTML += '<img class=photo src=' + emp.picture.large + '>';
-            profileHTML += '<ul><li>' + emp.name.first + ' ' + emp.name.last + '</li>';
-            profileHTML += '<li>' + emp.email + '</li>';
-            profileHTML += '<li>' + emp.location.city + '</li>';
-            profileHTML += '</li></ul>';
+            profileHTML += '<div class="list"><p>' + emp.name.first + ' ' + emp.name.last + '</p>';
+            profileHTML += '<p>' + emp.login.username + '</p>';
+            profileHTML += '<p>' + emp.location.city + ', ' +emp.location.state + '</p>';
+            profileHTML += '</div>';
             profileHTML += '</div>';
             modalHTML += '<div id=' + j + '>';
             modalHTML += '<img class=photo src=' + emp.picture.large + '>';

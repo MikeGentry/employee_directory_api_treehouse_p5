@@ -2,25 +2,12 @@
     box-sizing: border-box;
 }
 
-ul {
-    font-family: 'Rubik', sans-serif;
-    padding-top: 20px;
-    float: right;
-    list-style-type: none;
-}
-
-li:first-child {
-    font-weight: bold;
-    font-size: 20px;
-}
-
-li:first-child,
-li:last-child {
-    text-transform: capitalize;
+.page {
+    margin-left: 5%;
 }
 
 .header {
-    width: 1390px;
+    width: 1270px;
     border-style: solid;
     border-radius: 10px;
     padding-left: 20px;
@@ -37,27 +24,20 @@ li:last-child {
     margin: 0;
 }
 
-.photo {
-    height: 125px;
-    width: 125px;
-    border-radius: 50%;
-}
-
 .container {
     margin-top: 5px;
     display: grid;
-    grid-template-columns: 460px 460px 460px;
+    grid-template-columns: 420px 420px 420px;
     grid-gap: 5px;
 }
 
 .employee {
     width: 100%;
-    height: auto;
+    height: 160px;
     padding: 10px;
     border: 2px solid lightgray;
     border-radius: 10px;
     background: linear-gradient(45deg, #87cefa, #ffffff);
-    clear: both;
 }
 
 .employee:hover {
@@ -65,7 +45,30 @@ li:last-child {
     cursor: pointer;
 }
 
+.photo {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+}
+
+.list {
+    font-family: 'Rubik', sans-serif;
+    width: 250px;
+    padding-left: 10px;
+    float: right;
+}
+
+.list p:first-of-type {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.list p:last-of-type {
+    text-transform: capitalize;
+}
+
 /* modal window styling */
+/* **********************/
 
 .ui-dialog {
     text-align: center;
@@ -88,7 +91,6 @@ li:last-child {
     text-transform: capitalize;
 }
 
-
 .no-close .ui-dialog-titlebar-close {
     display: none;
 }
@@ -98,13 +100,20 @@ li:last-child {
 }
 
 /* media queries*/
+/****************/
 
-@media (max-width: 960px) {
+@media (max-width: 1235px) {
     .container {
-        grid-template-columns: 460px 460px;
+        grid-template-columns: 420px 420px;
     }
     .header {
-        width: 920px;
+        width: 845px;
+    }
+}
+
+@media (min-width: 1580px) {
+    .page {
+        margin-left: 10%;
     }
 }
 
