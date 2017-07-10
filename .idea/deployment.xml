@@ -5,7 +5,7 @@
       <paths name="mikegentry.net">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/public_html/empDirectoryAPI" local="$PROJECT_DIR$" web="/public_html/empDirectoryAPI" />
           </mappings>
         </serverdata>
       </paths>
